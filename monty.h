@@ -39,4 +39,10 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/**
+ *  * mon_errors - prints all error message in function
+ *   * @co_error: the error code as follwing
+ *    */
+void mon_errors(unsigned int co_error, ...);
+
 #endif
