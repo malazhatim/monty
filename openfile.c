@@ -17,6 +17,6 @@ void file_on(char *header_name)
 	fp = fopen(header_name, "r");
 	if (fp == NULL)
 		mon_errors(2, header_name);
-	r_file(fp);
+	read_file(fp);
 	fclose(fp);
 }
