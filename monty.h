@@ -50,5 +50,5 @@ void read_file(FILE *fp);
 int func_put(char *str, int nmb_line, int clear);
 void pint_mon(stack_t **stack, unsigned int n_mont);
 void stack_add_fun(stack_t **node_new, unsigned int am);
-
+void secoubd_err(int co_error, ...);
 #endif
