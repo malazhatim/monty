@@ -4,7 +4,7 @@
  * @node_new: poibter to new node
  * @am: integer
  */
-void stack_add_fun(stack_t **node_new, __attribute__((unused)) unsigned int am)
+void push(stack_t **node_new, __attribute__((unused)) unsigned int am)
 {
 	stack_t *first;
 

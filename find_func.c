@@ -15,20 +15,20 @@ void f_fun(char *op_c, char *v, int n, int fo)
 	int g = 1;
 
 	instruction_t fun_l[] = {
-		{"push", stack_add_fun},
+		{"push", push},
 		{"pall", pall},
 		{"pint", pint_mon},
-		{"pop", pop_top},
+		{"pop", pop},
 		{"nop", nop},
 		{"swap", swap},
-		{"add", add_nodes},
+		{"add", mon_add},
 		{NULL, NULL}
 	};
 
 	if (op_c[0] == '#')
 		return;
 
-	while (g = 1; fun_l[a].op_c != NULL)
+	for (g = 1; fun_l[a].op_c != NULL; a++)
 	{
 		if (strcmp(op_c, fun_l[a].op_c) == 0)
 		{

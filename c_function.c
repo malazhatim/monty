@@ -35,10 +35,10 @@ void c_fun(op_func fun, char *op, char *v, int n, int fo)
 		}
 		nod = nw_node(atoi(v) * g);
 		if (fo == 0)
-			func(&nod, n);
+			fun(&nod, n);
 		if (fo == 1)
 			stack_add_fun(&nod, n);
 	}
 	else
-		func(&head, n);
+		fun(&head, n);
 }

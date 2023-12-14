@@ -56,4 +56,10 @@ void f_fun(char *op_c, char *v, int n, int fo);
 void c_fun(op_func fun, char *op, char *v, int n, int fo);
 void add_to_queue(stack_t **n_nod, __attribute__((unused))unsigned int n);
 void nop(stack_t **stack, unsigned int l_n);
+void swap(stack_t **head, unsigned int l_n);
+void pall(stack_t **stck_h, unsigned int l_n);
+void push(stack_t **node_new, __attribute__((unused)) unsigned int am);
+void pop(stack_t **stack, unsigned int l_n);
+void mon_add(stack_t **stack, unsigned int l_n);
+
 #endif
