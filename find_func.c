@@ -35,7 +35,6 @@ void f_fun(char *opcode, char *v, int n, int fo)
 			c_fun(fun_l[a].f, opcode, v, n, fo);
 			g = 0;
 		}
-		a++;
 	}
 	if (g == 1)
 		mon_errors(3, n, opcode);
