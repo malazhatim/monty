@@ -2,7 +2,7 @@
 
 /**
  * file_on - open the file
- * header_name : string
+ * @header_name : string
  */
 void file_on(char *header_name)
 {

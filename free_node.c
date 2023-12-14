@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * nw_node - create new node 
+ * nw_node - create new node
  * @n: number iside the node
  * Return: on success point  to  a node otherwise null
  */
@@ -18,7 +18,7 @@ stack_t *nw_node(int n)
 	return (nw);
 }
 /**
- * free_n - free list
+ * node_free - free list
  */
 void node_free(void)
 {

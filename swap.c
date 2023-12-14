@@ -10,7 +10,7 @@ void swap(stack_t **head, unsigned int l_n)
 	stack_t *t;
 
 	if (head == NULL || *head == NULL || (*head)->next == NULL)
-		secoubd_err(8, l_n, "swap");
+		secound_err(8, l_n, "swap");
 	t = (*head)->next;
 	(*head)->next = t->next;
 	if (t->next != NULL)

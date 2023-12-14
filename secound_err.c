@@ -3,7 +3,7 @@
  * secound_err - all errors
  * @co_error: error code as follwing
  */
-void secoubd_err(int co_error, ...)
+void secound_err(int co_error, ...)
 {
 	va_list xy;
 	char *err_g;
@@ -25,7 +25,7 @@ void secoubd_err(int co_error, ...)
 			fprintf(stderr, "L%d: can't %s, stack too short\n", account_l, err_g);
 			break;
 		case 9:
-			fprintf(stderr, "L%d: division by zero\n", va_arg(xy, unsigned int ));
+			fprintf(stderr, "L%d: division by zero\n", va_arg(xy, unsigned int));
 			break;
 		default:
 			break;
