@@ -38,6 +38,12 @@ void f_fun(char *op, char *v, int n, int fo)
 	}
 	if (g == 1)
 		mon_errors(3, n, op);
+	if (fun_l[a].opcode == NULL)
+	{ fprintf(stderr, "L%d: unknown instruction %s\n", n);
+		free(n);
+		free(*op);
+		exit(EXIT_FAILURE); }
+	return (1);
 }
 
 
