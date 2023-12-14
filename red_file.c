@@ -9,7 +9,7 @@
  */
 int func_put(char *str, int nmb_line, int clear)
 {
-	char *pt_put;
+	char *ptput;
 	char *tm;
 	const char *vol;
 
@@ -17,18 +17,18 @@ int func_put(char *str, int nmb_line, int clear)
 
 	if (str == NULL)
 		mon_errors(4);
-	pt_put = strtok(str, vol);
+	ptput = strtok(str, vol);
 
 	if (pt_put == NULL)
 		return (clear);
 	tm = strtok(NULL, vol);
 
-	if (strcmp(pt_put, "queue") == 0)
+	if (strcmp(ptput, "queue") == 0)
 		return (1);
 
-	else if (strcmp(pt_put, "stack") == 0)
+	else if (strcmp(ptput, "stack") == 0)
 		return (0);
-	f_fun(pt_put, tm, nmb_line, clear);
+	f_fun(ptput, tm, nmb_line, clear);
 	return (clear);
 }
 
