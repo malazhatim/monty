@@ -25,7 +25,7 @@ void c_fun(op_func fun, char *op, char *v, int n, int fo)
 		}
 		if (v == NULL)
 			mon_errors(5, n);
-		for (a = 0;v[a] != '\0'i; a++)
+		for (a = 0; v[a] != '\0'; a++)
 		{
 			if (isdigit(v[a]) == 0)
 			{

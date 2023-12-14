@@ -19,7 +19,7 @@ int func_put(char *str, int nmb_line, int clear)
 		mon_errors(4);
 	ptput = strtok(str, vol);
 
-	if (pt_put == NULL)
+	if (ptput == NULL)
 		return (clear);
 	tm = strtok(NULL, vol);
 
