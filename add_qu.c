@@ -1,5 +1,5 @@
 #include "monty.h"
-stack_t *head = NULL;
+
 /**
  * add_to_queue - Adds a node to the queue.
  * @n_nod: Pointer to the new node.
