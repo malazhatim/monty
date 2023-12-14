@@ -31,7 +31,6 @@ void c_fun(op_func fun, char *op, char *v, int n, int fo)
 			{
 				mon_errors(5, n);
 			}
-	
 		}
 		nod = nw_node(atoi(v) * g);
 		if (fo == 0)
