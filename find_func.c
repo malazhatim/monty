@@ -2,14 +2,14 @@
 
 /**
  * f_fun - find the appropriate function for the opcode
- * @op_c: opcode
+ * @opcode: opcode
  * @v: argument of opcode
  * @fo:  storage format. If 0 Nodes will be entered as a stack.
  * @n:line number
  * if 1 nodes will be entered as a queue.
  * Return: void
  */
-void f_fun(char *op_c, char *v, int n, int fo)
+void f_fun(char *opcode, char *v, int n, int fo)
 {
 	int a = 0;
 	int g = 1;
@@ -25,20 +25,20 @@ void f_fun(char *op_c, char *v, int n, int fo)
 		{NULL, NULL}
 	};
 
-	if (op_c[0] == '#')
+	if (opcode[0] == '#')
 		return;
 
-	for (g = 1; fun_l[a].op_c != NULL; a++)
+	for (g = 1; fun_l[a].opcode != NULL; a++)
 	{
-		if (strcmp(op_c, fun_l[a].op_c) == 0)
+		if (strcmp(opcode, fun_l[a].opcode) == 0)
 		{
-			c_fun(fun_l[a].f, op_c, v, n, fo);
+			c_fun(fun_l[a].f, opcode, v, n, fo);
 			g = 0;
 		}
 		a++;
 	}
 	if (g == 1)
-		mon_errors(3, n, op_c);
+		mon_errors(3, n, opcode);
 }
 
 

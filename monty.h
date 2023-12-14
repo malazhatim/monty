@@ -52,7 +52,7 @@ void pint_mon(stack_t **stack, unsigned int n_mont);
 void stack_add_fun(stack_t **node_new, unsigned int am);
 void secound_err(int co_error, ...);
 int parse(char *buff, int l_n, int fo);
-void f_fun(char *op_c, char *v, int n, int fo);
+void f_fun(char *opcode, char *v, int n, int fo);
 void c_fun(op_func fun, char *op, char *v, int n, int fo);
 void add_to_queue(stack_t **n_nod, __attribute__((unused))unsigned int n);
 void nop(stack_t **stack, unsigned int l_n);
