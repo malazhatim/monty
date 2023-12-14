@@ -9,7 +9,7 @@
  * if 1 nodes will be entered as a queue.
  * Return: void
  */
-void f_fun(char *opcode, char *v, int n, int fo)
+void f_fun(char *op, char *v, int n, int fo)
 {
 	int a = 0;
 	int g = 1;
@@ -25,19 +25,19 @@ void f_fun(char *opcode, char *v, int n, int fo)
 		{NULL, NULL}
 	};
 
-	if (opcode[0] == '#')
+	if (op[0] == '#')
 		return;
 
 	for (g = 1, a = 0;  fun_l[a].opcode != NULL; a++)
 	{
-		if (strcmp(opcode, fun_l[a].opcode) == 0)
+		if (strcmp(op, fun_l[a].opcode) == 0)
 		{
-			c_fun(fun_l[a].f, opcode, v, n, fo);
+			c_fun(fun_l[a].f, op, v, n, fo);
 			g = 0;
 		}
 	}
 	if (g == 1)
-		mon_errors(3, n, opcode);
+		mon_errors(3, n, op);
 }
 
 
