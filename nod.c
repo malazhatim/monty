@@ -7,6 +7,6 @@
  */
 void nop(stack_t **stack, unsigned int l_n)
 {
-	(void)stack;
+	(void)*stack;
 	(void)l_n;
 }
