@@ -33,7 +33,7 @@ void c_fun(op_func fun, char *op, char *v, int n, int fo)
 			}
 			a++;
 		}
-		nod = create_node(atoi(v) * g);
+		nod = nw_node(atoi(v) * g);
 		if (fo == 0)
 			func(&nod, n);
 		if (fo == 1)
