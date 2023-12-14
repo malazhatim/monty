@@ -52,5 +52,7 @@ void pint_mon(stack_t **stack, unsigned int n_mont);
 void stack_add_fun(stack_t **node_new, unsigned int am);
 void secoubd_err(int co_error, ...);
 int parse(char *buff, int l_n, int fo);
-void f_fun(char *op_c, char *v, int n, int fo)
+void f_fun(char *op_c, char *v, int n, int fo);
+void c_fun(op_func fun, char *op, char *v, int n, int fo);
+
 #endif
