@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * stack_add_fun - add node to stack
+ * push - add node to stack
  * @node_new: poibter to new node
  * @am: integer
  */
