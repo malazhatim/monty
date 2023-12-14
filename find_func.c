@@ -28,7 +28,7 @@ void f_fun(char *opcode, char *v, int n, int fo)
 	if (opcode[0] == '#')
 		return;
 
-	for (g = 1; fun_l[a].opcode != NULL; a++)
+	for (g = 1, a = 0;  fun_l[a].opcode != NULL; a++)
 	{
 		if (strcmp(opcode, fun_l[a].opcode) == 0)
 		{
