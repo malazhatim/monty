@@ -1,23 +1,5 @@
 #include "monty.h"
-/**
- * read_file - read the file content
- * @fp: pointer two file description
- */
-void read_file(FILE *fp)
-{
-	int line;
-	int aux = 0;
-	char *buffer = NULL;
-	size_t n = 0;
 
-	if (fp == NULL)
-		mon_errors(2);
-	for (line = 1; getline(&buffer, &n, fp) != EOF; line++)
-	{
-		aux = func_put(buffer, line, aux);
-	}
-	free(buffer);
-}
 /**
  * func_put - line
  * @str: string
