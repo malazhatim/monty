@@ -37,7 +37,7 @@ void c_fun(op_func fun, char *op, char *v, int n, int fo)
 		if (fo == 0)
 			func(&nod, n);
 		if (fo == 1)
-			add_to_queue(&nod, n);
+			stack_add_fun(&nod, n);
 	}
 	else
 		func(&head, n);

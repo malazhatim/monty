@@ -15,12 +15,12 @@ void f_fun(char *op_c, char *v, int n, int fo)
 	int g = 1;
 
 	instruction_t fun_l[] = {
-		{"push", add_to_stack},
-		{"pall", print_stack},
-		{"pint", print_top},
+		{"push", stack_add_fun},
+		{"pall", pall},
+		{"pint", pint_mon},
 		{"pop", pop_top},
 		{"nop", nop},
-		{"swap", swap_nodes},
+		{"swap", swap},
 		{"add", add_nodes},
 		{NULL, NULL}
 	};

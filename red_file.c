@@ -46,7 +46,7 @@ int func_put(char *str, int nmb_line, int clear)
 
 	else if (strcmp(pt_put, "stack") == 0)
 		return (0);
-	fun_src(pt_put, tm, nmb_line, clear);
+	f_fun(pt_put, tm, nmb_line, clear);
 	return (clear);
 }
 
