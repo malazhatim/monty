@@ -6,19 +6,13 @@
  */
 void file_on(char *header_name)
 {
-	int ch_file;
-	FILE *fp;
+	FILE *fp = fopen(header_name, "r");
 
-	if (header_name == NULL)
-		mon_errors(2, header_name);
-	ch_file = access(header_name, R_OK);
-	if (ch_file == -1)
-		mon_errors(2, header_name);
-	fp = fopen(header_name, "r");
-	if (fp == NULL)
+	if (header_name == NULL || fp == NULL)
 		mon_errors(2, header_name);
 	read_file(fp);
 	fclose(fp);
+
 }
 /**
  * read_file - read file
