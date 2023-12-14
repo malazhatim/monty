@@ -1,4 +1,5 @@
 #include "monty.h"
+stack_t *head = NULL;
 /**
  * add_to_queue - Adds a node to the queue.
  * @n_nod: Pointer to the new node.
@@ -7,7 +8,6 @@
 void add_to_queue(stack_t **n_nod, __attribute__((unused))unsigned int n)
 {
 	stack_t *t;
-	stack_t *head = NULL;
 
 	if (n_nod == NULL || *n_nod == NULL)
 		exit(EXIT_FAILURE);
