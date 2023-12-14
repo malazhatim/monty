@@ -25,13 +25,13 @@ void c_fun(op_func fun, char *op, char *v, int n, int fo)
 		}
 		if (v == NULL)
 			mon_errors(5, n);
-		while (v[a] != '\0')
+		for (a = 0;v[a] != '\0'i; a++)
 		{
 			if (isdigit(v[a]) == 0)
 			{
 				mon_errors(5, n);
 			}
-			a++;
+	
 		}
 		nod = nw_node(atoi(v) * g);
 		if (fo == 0)
